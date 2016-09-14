@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <_name>Create Markers</_name>
+  <id>fsmMLK.createMarkers</id>
+  <dependency type="executable" location="extensions">createMarkers.py</dependency>
+  <dependency type="executable" location="extensions">inkscapeMadeEasy_Base.py</dependency>
+  <dependency type="executable" location="extensions">inkscapeMadeEasy_Draw.py</dependency>
+  <dependency type="executable" location="extensions">inkex.py</dependency>
+    <param name="tab" type="notebook">
+        <page name="Markers" appearance="minimal" _gui-text="Config">
+            <param name="desc1" type="description" appearance="header">Predefined types</param>
+
+            <param name="makeDot"    type="boolean" _gui-text="Dot marker">1</param>
+            <param name="makeDotName" type="string"  _gui-text="nameID of dot marker">MyDot</param>
+            <param name="makeEllipsis"    type="boolean" _gui-text="Ellipsis marker">1</param>
+            <param name="makeEllipsisName" type="string"  _gui-text="nameID of ellipsis marker">MyEllipsis</param>
+            <param name="makeArrow1"    type="boolean" _gui-text="arrow1 marker">1</param>
+            <param name="makeArrow1Name" type="string"  _gui-text="nameID of arrow marker">MyArrow</param>
+            
+            <param name="desc2" type="description" appearance="header">Custom marker</param>
+            <param name="makeCustom"    type="boolean" _gui-text="custom marker">1</param>
+            <param name="makeCustomName" type="string"  _gui-text="nameID of custom marker">MyCustom</param>
+            <param name="makeCustomPathDef" type="string"  _gui-text="Path definition">M -5,5 L 5,-5 M 5,5 L -5,-5</param>
+            
+            <param name="desc3" type="description" appearance="header">Parameters</param>
+            <param name="scale"      type="float"   min="0.1"    max="1000" precision="2"   _gui-text="Scale factor">1</param>
+            <param name="renameMode" type="optiongroup" appearance="minimal" _gui-text="nameID rename mode:">
+                <_option value="0">If nameID is taken, does not modify the marker</_option>
+                <_option value="1">Overwrites marker definition if nameID is already used</_option>
+                <_option value="2">Creates a new unique nameID, adding a suffix number</_option>
+            </param>
+        </page>
+        <page name="Colors" appearance="minimal" _gui-text="Colors">
+            <param name="markColor" type="optiongroup" appearance="minimal" _gui-text="marker color:">
+                <_option value="black">black</_option>
+                <_option value="none">none</_option>
+                <_option value="red">red</_option>
+                <_option value="blue">blue</_option>
+                <_option value="yellow">yellow</_option>
+                <_option value="green">green</_option>
+                <_option value="purple">purple</_option>
+                <_option value="magen">magenta</_option>
+                <_option value="white">white</_option>
+                <_option value="Lred">Lred</_option>
+                <_option value="Lblue">Lblue</_option>
+                <_option value="Lyellow">Lyellow</_option>
+                <_option value="Lgreen">Lgreen</_option>
+                <_option value="Lmagen">Lmagenta</_option>
+                <_option value="Dred">Dred</_option>
+                <_option value="Dblue">Dblue</_option>
+                <_option value="Dyellow">Dyellow</_option>
+                <_option value="Dgreen">Dgreen</_option>
+                <_option value="Dmagen">Dmagenta</_option>
+                <_option value="picker">use color picker</_option>
+            </param>
+            <param name="colorPickerMark" type="color"></param>
+            
+            <param name="lineColor" type="optiongroup" appearance="minimal" _gui-text="line color:">
+                <_option value="black">black</_option>
+                <_option value="none">none</_option>
+                <_option value="red">red</_option>
+                <_option value="blue">blue</_option>
+                <_option value="yellow">yellow</_option>
+                <_option value="green">green</_option>
+                <_option value="purple">purple</_option>
+                <_option value="magen">magenta</_option>
+                <_option value="white">white</_option>
+                <_option value="Lred">Lred</_option>
+                <_option value="Lblue">Lblue</_option>
+                <_option value="Lyellow">Lyellow</_option>
+                <_option value="Lgreen">Lgreen</_option>
+                <_option value="Lmagen">Lmagenta</_option>
+                <_option value="Dred">Dred</_option>
+                <_option value="Dblue">Dblue</_option>
+                <_option value="Dyellow">Dyellow</_option>
+                <_option value="Dgreen">Dgreen</_option>
+                <_option value="Dmagen">Dmagenta</_option>
+                <_option value="picker">use color picker</_option>
+            </param>
+            <param name="colorPickerLine" type="color"></param>
+        </page>
+        <page name="Help" _gui-text="Help">
+            <param name="desc3" type="description" appearance="header">General</param>
+            <_param name="instructions" type="description" >
+This extension allows you to create new markers with custom colors. The extension will add a line  in the document to show de marker.
+            </_param>
+            <param name="desc3" type="description" appearance="header">Config tab</param>
+            <_param name="instructions" type="description" xml:space="preserve">
+Scale: general scale of the marker
+
+nameID rename mode: behaviour in case the nameID is already used. The options are: 'do not modify', 'overwrite' or 'rename, addins a suffix number'
+
+Path definition: path definition of the custom marker. Please see any svg reference on sintax, e.g., https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths.
+Example: M -5,5 L 5,-5 M 5,5 L -5,-5  (produces a cross)
+            </_param>
+            <param name="desc3" type="description" appearance="header">Colors tab</param>
+            <_param name="instructions" type="description" xml:space="preserve">
+Let you choose stroke and filling colors. If you choose 'use color picker' from the radio buttons, you can select the color from the color picker widget.
+            </_param>
+        </page>
+    </param>
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu _name="fsmMLK"/>
+        </effects-menu>
+    </effect>
+    <script>
+      <command reldir="extensions" interpreter="python">createMarkers.py</command>
+    </script>
+</inkscape-extension>
+
