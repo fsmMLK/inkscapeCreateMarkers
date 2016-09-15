@@ -72,6 +72,8 @@ Ghosty (large): The same, but with different colors and scale factor
 
 # Installation and requirements
 
+This extension was partially developed in inkscape 0.48 and partially in 0.91 in Linux (Kubuntu 12.04 and 14.04). It should work on both versions of Inkscape. Also, they should work in differente OSs too as long as all requirements are installed.
+
 This extension requires another extension to run, inkscapeMadeEasy <https://github.com/fsmMLK/inkscapeMadeEasy>, which contains several backstage methods and classes.
 
 In order to use createMarkers extension, you must also download inkscapeMadeEasy files and put them both inside Inkscape's extension directory. Please refer to inkscapeMadeEasy installation instructions. In the end you must have the following files and directories in your Inkscape extension directory.
