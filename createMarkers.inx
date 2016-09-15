@@ -17,23 +17,25 @@
             <param name="makeArrow1"    type="boolean" _gui-text="arrow1 marker">1</param>
             <param name="makeArrow1Name" type="string"  _gui-text="nameID of arrow marker">MyArrow</param>
             
-            <param name="desc2" type="description" appearance="header">Custom marker</param>
+            <param name="desc2" type="description" appearance="header">Custom type</param>
             <param name="makeCustom"    type="boolean" _gui-text="custom marker">1</param>
             <param name="makeCustomName" type="string"  _gui-text="nameID of custom marker">MyCustom</param>
             <param name="makeCustomPathDef" type="string"  _gui-text="Path definition">M -5,5 L 5,-5 M 5,5 L -5,-5</param>
+            <param name="makeCustomLineWidth"      type="float"   min="0.1"    max="100" precision="1"   _gui-text="Line width">1.0</param>
             
-            <param name="desc3" type="description" appearance="header">Parameters</param>
+            <param name="desc3" type="description" appearance="header">General config settings</param>
             <param name="scale"      type="float"   min="0.1"    max="1000" precision="2"   _gui-text="Scale factor">1</param>
-            <param name="renameMode" type="optiongroup" appearance="minimal" _gui-text="nameID rename mode:">
-                <_option value="0">If nameID is taken, does not modify the marker</_option>
-                <_option value="1">Overwrites marker definition if nameID is already used</_option>
-                <_option value="2">Creates a new unique nameID, adding a suffix number</_option>
+            <param name="renameMode" type="optiongroup" appearance="minimal" _gui-text="nameID conflict behaviour:">
+                <_option value="0">Do not modify the marker</_option>
+                <_option value="1">Overwrites definition</_option>
+                <_option value="2">Add suffix number to nameID</_option>
             </param>
         </page>
         <page name="Colors" appearance="minimal" _gui-text="Colors">
-            <param name="markColor" type="optiongroup" appearance="minimal" _gui-text="marker color:">
+          
+            <param name="desc1" type="description" appearance="header">Filling color</param>
+            <param name="markColor" type="optiongroup" appearance="minimal" _gui-text="Color:">
                 <_option value="black">black</_option>
-                <_option value="none">none</_option>
                 <_option value="red">red</_option>
                 <_option value="blue">blue</_option>
                 <_option value="yellow">yellow</_option>
@@ -51,13 +53,14 @@
                 <_option value="Dyellow">Dyellow</_option>
                 <_option value="Dgreen">Dgreen</_option>
                 <_option value="Dmagen">Dmagenta</_option>
+                <_option value="none">none</_option>
                 <_option value="picker">use color picker</_option>
             </param>
             <param name="colorPickerMark" type="color"></param>
             
-            <param name="lineColor" type="optiongroup" appearance="minimal" _gui-text="line color:">
+            <param name="desc1" type="description" appearance="header">Stroke color</param>
+            <param name="lineColor" type="optiongroup" appearance="minimal" _gui-text="Color:">
                 <_option value="black">black</_option>
-                <_option value="none">none</_option>
                 <_option value="red">red</_option>
                 <_option value="blue">blue</_option>
                 <_option value="yellow">yellow</_option>
@@ -75,6 +78,7 @@
                 <_option value="Dyellow">Dyellow</_option>
                 <_option value="Dgreen">Dgreen</_option>
                 <_option value="Dmagen">Dmagenta</_option>
+                <_option value="none">none</_option>
                 <_option value="picker">use color picker</_option>
             </param>
             <param name="colorPickerLine" type="color"></param>
@@ -82,7 +86,7 @@
         <page name="Help" _gui-text="Help">
             <param name="desc3" type="description" appearance="header">General</param>
             <_param name="instructions" type="description" >
-This extension allows you to create new markers with custom colors. The extension will add a line  in the document to show de marker.
+This extension allows you to create new markers with custom colors. The extension will also add a line in your document to show it.
             </_param>
             <param name="desc3" type="description" appearance="header">Config tab</param>
             <_param name="instructions" type="description" xml:space="preserve">
@@ -92,6 +96,8 @@ nameID rename mode: behaviour in case the nameID is already used. The options ar
 
 Path definition: path definition of the custom marker. Please see any svg reference on sintax, e.g., https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths.
 Example: M -5,5 L 5,-5 M 5,5 L -5,-5  (produces a cross)
+
+Line width: line width of the marker
             </_param>
             <param name="desc3" type="description" appearance="header">Colors tab</param>
             <_param name="instructions" type="description" xml:space="preserve">
