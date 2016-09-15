@@ -53,7 +53,7 @@ You can also select **use color picker** to choose the color from the color pick
 
 # Behind the scene.
 
-Behind the scenes, this extension is using the extension inkscapeMadeEasy  <https://fsmmlk.github.io/inkscapeMadeEasy/>, mainly two classes defined in inkscapeMadeEasy_Draw to manage colors and create markers.
+Behind the scenes, this extension is using employing inkscapeMadeEasy  <https://github.com/fsmMLK/inkscapeMadeEasy> extesnion. It uses mainly two classes defined in inkscapeMadeEasy_Draw.py to manage colors and create markers.
 
 # Examples
 
