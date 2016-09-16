@@ -15,7 +15,9 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r"
-   sodipodi:docname="Examples.svg">
+   sodipodi:docname="Examples.svg"
+   inkscape:export-xdpi="890.8150024414"
+   inkscape:export-ydpi="890.8150024414">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.041764027077"
-     inkscape:cx="403.506405338"
-     inkscape:cy="666.4148853951"
+     inkscape:zoom="10.08352967082"
+     inkscape:cx="399.8147536082"
+     inkscape:cy="676.5478502816"
      inkscape:document-units="px"
      inkscape:current-layer="svg2"
      showgrid="true"
@@ -201,7 +203,7 @@
   <path
      id="path4236"
      inkscape:label="none"
-     style="fill:none;stroke:#0000ff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;marker-start:url(#MyEllipsis_1.0Start_n00001);marker-end:url(#MyEllipsis_1.0End_n00001)"
+     style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;marker-start:url(#MyEllipsis_1.0Start_n00001);marker-end:url(#MyEllipsis_1.0End_n00001)"
      d="m 345,392.3621826172 10,0 10,-10 10,0"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cccc"
@@ -219,7 +221,7 @@
   <path
      id="path46609"
      inkscape:label="none"
-     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;marker-start:url(#MyArrow_1.0Start_n00001);marker-end:url(#MyArrow_1.0End_n00001)"
+     style="fill:none;stroke:#008000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;marker-start:url(#MyArrow_1.0Start_n00001);marker-end:url(#MyArrow_1.0End_n00001)"
      d="m 345,407.3621826172 10,0 10,-10 10,0"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cccc"
