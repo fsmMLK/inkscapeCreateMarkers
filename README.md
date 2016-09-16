@@ -59,7 +59,7 @@ In both cases, you have three options in the `Color` drop down menu:
 
   - You can select **use color picker** to choose the color from the color picker widget just below the `Color` drop down menu. **Attention:** the color selected in the color picker widget will be considered **ONLY** if you select **use color picker** in the drop down menu. 
 
-<img src="docs/images/Default_colors.png" width="500px"/>
+<img src="docs/images/Default_colors.png" width="300px"/>
 
 ### Observations
 
