@@ -1,7 +1,7 @@
 # createMarkers
 Inkscape extension to assist creating new markers with custom shapes and colors.
 
-<img src="docs/images/Examples.png" alt="Drawing" width="600px"/>
+<img src="docs/images/Examples.png" alt="Drawing" width="900px"/>
 
 ### main features
 
