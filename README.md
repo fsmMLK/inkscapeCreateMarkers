@@ -22,7 +22,7 @@ This extension is presented in two tabs. The **Config** tab allows you to set mo
 
 ### The Config tab
 
-<img src="docs/images/Screen_01.png" alt="Config" style="width: 250px;"/>
+<img src="docs/images/Screen_01.png" alt="Config" style="width: 200px;"/>
 
 This tab is divided in three sections. On the first section, called **Predefined types**, you can create three predefined markers:
 
@@ -30,7 +30,7 @@ This tab is divided in three sections. On the first section, called **Predefined
  - **Arrow1**: similar to Inkscape's standard Arrow1 marker, but you can choose the filling and stroke colors independently
  - **Ellipsis**: this marker differs from Inkscape's standard marker (InfiniteLine) since the dots in this marker will follow the line width of your line (if scale factor is set to 1.0)
 
-<img src="docs/images/predefined_types.png" alt="Drawing" style="width: 300px;"/>
+<img src="docs/images/predefined_types.png" alt="Drawing" style="width: 200px;"/>
 
 To create them, you just have to check the respective checkbox (you can check more than one). For each predefined marker you can give one nameID. Please see below how to configure its behavior when the extensions is faced with conflicting marker nameIDs.
 
@@ -45,7 +45,7 @@ In the third section **General config settings** you can adjust the scale of you
 
 ### The Colors tab
 
-<img src="docs/images/Screen_02.png" alt="Color" style="width: 250px;"/>
+<img src="docs/images/Screen_02.png" alt="Color" style="width: 200px;"/>
 
 This tab is divided in two sections. The first refer to the filling color while the second to the stroke color of your marker.
 
