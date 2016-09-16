@@ -3,7 +3,7 @@ Inkscape extension to assist creating new markers with custom shapes and colors.
 
 <img src="docs/images/Examples.png" alt="Drawing" style="width: 300px;"/>
 
-<img src="docs/images/Examples.png" alt="Drawing" width:="100px"/>
+<img src="docs/images/Examples.png" alt="Drawing" width="100px"/>
 
 ### main features
 
