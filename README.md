@@ -1,7 +1,7 @@
 # createMarkers
 Inkscape extension to assist creating new markers with custom shapes and colors.
 
-<img src="docs/images/Examples.png" alt="Drawing" width="900px"/>
+<img src="docs/images/Examples.png" width="900px"/>
 
 ### main features
 
@@ -22,7 +22,7 @@ This extension is presented in two tabs. The **Config** tab allows you to set mo
 
 ### The Config tab
 
-<img src="docs/images/Screen_01.png" alt="Config" style="width: 200px;"/>
+<img src="docs/images/Screen_01.png" width="700px"/>
 
 This tab is divided in three sections. On the first section, called **Predefined types**, you can create three predefined markers:
 
@@ -30,7 +30,7 @@ This tab is divided in three sections. On the first section, called **Predefined
  - **Arrow1**: similar to Inkscape's standard Arrow1 marker, but you can choose the filling and stroke colors independently
  - **Ellipsis**: this marker differs from Inkscape's standard marker (InfiniteLine) since the dots in this marker will follow the line width of your line (if scale factor is set to 1.0)
 
-<img src="docs/images/predefined_types.png" alt="Drawing" style="width: 200px;"/>
+<img src="docs/images/predefined_types.png" width="600px"/>
 
 To create them, you just have to check the respective checkbox (you can check more than one). For each predefined marker you can give one nameID. Please see below how to configure its behavior when the extensions is faced with conflicting marker nameIDs.
 
@@ -45,7 +45,7 @@ In the third section **General config settings** you can adjust the scale of you
 
 ### The Colors tab
 
-<img src="docs/images/Screen_02.png" alt="Color" style="width: 200px;"/>
+<img src="docs/images/Screen_02.png" width="700px"/>
 
 This tab is divided in two sections. The first refer to the filling color while the second to the stroke color of your marker.
 
@@ -59,7 +59,7 @@ In both cases, you have three options in the `Color` drop down menu:
 
   - You can select **use color picker** to choose the color from the color picker widget just below the `Color` drop down menu. **Attention:** the color selected in the color picker widget will be considered **ONLY** if you select **use color picker** in the drop down menu. 
 
-<img src="docs/images/Default_colors.png" alt="Color" style="width: 200px;"/>
+<img src="docs/images/Default_colors.png" width="500px"/>
 
 ### Observations
 
@@ -69,7 +69,7 @@ In both cases, you have three options in the `Color` drop down menu:
 
 3- The system of coordinates of the marker depends on the node under consideration (start, mid or end). The following figure presents the coordinate system considered for each case. **Remember that +y points down in Inkscape!**
 
-<img src="docs/images/marker_Orientation.png" alt="Drawing" style="width: 600px;"/>
+<img src="docs/images/marker_Orientation.png" width="900px"/>
 
 # Behind the scene
 
@@ -77,7 +77,7 @@ Behind the scenes, this extension is employing inkscapeMadeEasy extension <https
 
 # Examples
 
-<img src="docs/images/Examples.png" alt="Drawing" style="width: 300px;"/>
+<img src="docs/images/Examples.png" width="900px"/>
 
 
 Blue cross: `M -3,3 L 3,-3 M 3,3 L -3,-3`
