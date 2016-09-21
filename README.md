@@ -15,6 +15,30 @@ The main features/advantages are
 
 4-) It is a convenient way to modify/redefine a marker in your document. You just have to set the same nameID and set its configuration to overwrite the old definition.
 
+# Installation and requirements
+
+This extension was partially developed in Inkscape 0.48 and partially in 0.91 in Linux (Kubuntu 12.04 and 14.04). It should work on both versions of Inkscape. Also, they should work in different OSs too as long as all requirements are installed.
+
+This extension requires another extension to run, inkscapeMadeEasy <https://github.com/fsmMLK/inkscapeMadeEasy>, which contains several backstage methods and classes.
+
+In order to use createMarkers extension, you must also download inkscapeMadeEasy files and put them inside Inkscape's extension directory. Please refer to inkscapeMadeEasy installation instructions. In the end you must have the following files and directories in your Inkscape extension directory.
+
+```
+inkscape/extensions/
+            |-- inkscapeMadeEasy_Base.py
+            |-- inkscapeMadeEasy_Draw.py
+            |-- inkscapeMadeEasy_Plot.py
+            |-- textextLib
+            |   |-- __init__.py
+            |   |-- basicLatexPackages.tex
+            |   |-- textext.inx
+            |   |-- textext.py
+            |
+            |-- createMarkers.py
+            `-- createMarkers.inx
+```
+
+
 # Usage
 
 This extension is presented in two tabs. The **Config** tab allows you to set most of the options for your marker, while the **Colors** tab allows you to select both stroke and filling colors.
@@ -90,28 +114,6 @@ Ghosty (small): `M -5,0  a 5,5 0 0 1 10 0 l 0 6 l -2.5,-2.5 -2.5,2.5 -2.5,-2.5 -
 
 Ghosty (large): The same, but with different colors and scale factor
 
-# Installation and requirements
-
-This extension was partially developed in inkscape 0.48 and partially in 0.91 in Linux (Kubuntu 12.04 and 14.04). It should work on both versions of Inkscape. Also, they should work in differente OSs too as long as all requirements are installed.
-
-This extension requires another extension to run, inkscapeMadeEasy <https://github.com/fsmMLK/inkscapeMadeEasy>, which contains several backstage methods and classes.
-
-In order to use createMarkers extension, you must also download inkscapeMadeEasy files and put them both inside Inkscape's extension directory. Please refer to inkscapeMadeEasy installation instructions. In the end you must have the following files and directories in your Inkscape extension directory.
-
-```
-inkscape/extensions/
-            |-- inkscapeMadeEasy_Base.py
-            |-- inkscapeMadeEasy_Draw.py
-            |-- inkscapeMadeEasy_Plot.py
-            |-- textextLib
-            |   |-- __init__.py
-            |   |-- basicLatexPackages.tex
-            |   |-- textext.inx
-            |   |-- textext.py
-            |
-            |-- createMarkers.py
-            `-- createMarkers.inx
-```
 
 # To do
 
