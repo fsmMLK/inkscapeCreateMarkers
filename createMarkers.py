@@ -3,7 +3,7 @@
 # --------------------------------------------------------------------------------------
 #
 #    createMarkers: - Inkscape extension to assist creating new markers with
-#                     custom shape and colors. 
+#                     custom shape and colors.
 #
 #    Copyright (C) 2016 by Fernando Moura
 #
@@ -29,6 +29,7 @@ import inkscapeMadeEasy_Draw as inkDraw
 import math
 
 #---------------------------------------------
+
 
 class CreateMarkers(inkBase.inkscapeMadeEasy):
 
@@ -93,7 +94,7 @@ class CreateMarkers(inkBase.inkscapeMadeEasy):
         if so.makeCustom:
             markerPath = so.makeCustomPathDef
             markerTransform = 'scale(' + str(so.scale) + ')'
-            Marker = inkDraw.marker.createMarker(self, so.makeCustomName + '_' + str(so.scale), markerPath=markerPath, RenameMode=int(so.renameMode), strokeColor=lineColor, fillColor=markerColor, lineWidth=so.makeCustomLineWidth,markerTransform=markerTransform)
+            Marker = inkDraw.marker.createMarker(self, so.makeCustomName + '_' + str(so.scale), markerPath=markerPath, RenameMode=int(so.renameMode), strokeColor=lineColor, fillColor=markerColor, lineWidth=so.makeCustomLineWidth, markerTransform=markerTransform)
             lineStylePlot = inkDraw.lineStyle.set(lineWidth=1, lineColor=lineColor, markerStart=Marker, markerEnd=Marker)
             inkDraw.line.relCoords(root_layer, [[10, 0], [10, -10]], [position[0], position[1] + 20], lineStyle=lineStylePlot)
 
