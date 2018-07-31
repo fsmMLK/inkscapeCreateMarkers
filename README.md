@@ -82,7 +82,7 @@ In the third section **General config settings** you can adjust the scale of you
 
 <img src="docs/images/Screen_02.png" width="700px"/>
 
-This tab is divided in two sections. The first refer to the filling color while the second to the stroke color of your marker.
+This tab is divided in two sections. The first refers to the filling color while the second to the stroke color of your marker.
 
 **Observation:** Note that the stroke color of the marker refer to the marker only, that is, the line itself can have a different color. See the examples below. 
 
