@@ -52,6 +52,8 @@ Please refer to <https://fsmmlk.github.io/inkscapeMadeEasy/#installation-and-req
 
 # Usage
 
+The extension can be found under `extensions > fsmMLK` menu.
+
 This extension is presented in two tabs. The **Config** tab allows you to set most of the options for your marker, while the **Colors** tab allows you to select both stroke and filling colors.
 
 
