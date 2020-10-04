@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Create Markers</name>
+    <id>fsmMLK.createMarkers</id>
+    <dependency type="executable" location="inx">createMarkers.py</dependency>
+    <dependency type="executable" location="extensions">inkscapeMadeEasy/inkscapeMadeEasy_Base.py</dependency>
+    <dependency type="executable" location="extensions">inkscapeMadeEasy/inkscapeMadeEasy_Draw.py</dependency>
+    <param name="tab" type="notebook">
+        <page name="Markers" appearance="minimal" gui-text="Config">
+            <hbox>
+                <vbox>
+                    <label appearance="header">Marker type</label>
+                    <param name="markerType" type="optiongroup" gui-text="" gui-description="Choose the type of marker">
+                        <option value="arrow1">Arrow1</option>
+                        <option value="cross">Cross</option>
+                        <option value="dot">Dot</option>
+                        <option value="ellipsis">Ellipsis</option>
+                        <option value="custom">Custom</option>
+                    </param>
+                </vbox>
+                <spacer/>
+                <separator/>
+                <spacer/>
+                <vbox>
+                    <label appearance="header">General config settings</label>
+                    <param name="markerName" type="string" gui-text="nameID">MyMarker</param>
+                    <param name="renameMode" type="optiongroup" appearance="combo" gui-description="Action in case nameId is already in use" gui-text="nameID conflict action:">
+                        <option value="0">Do nothing and abort</option>
+                        <option value="1">Overwrite definition</option>
+                        <option value="2">Add unique suffix number</option>
+                    </param>
+                    <param name="scale" type="float" min="0.1" max="5" precision="2" gui-description="General scale of the marker with respect to the line width" gui-text="Scale factor">
+                        1
+                    </param>
+                    <hbox>
+                        <label>Filling color</label>
+                        <spacer size="expand"/>
+                        <param name="markColor" type="optiongroup" appearance="combo" gui-text="" gui-description="Let you choose filling color. If you choose 'use color picker', you can select the color from the color picker widget on the right.">
+                            <option value="picker">use color picker --></option>
+                            <option value="black">black</option>
+                            <option value="red">red</option>
+                            <option value="blue">blue</option>
+                            <option value="yellow">yellow</option>
+                            <option value="green">green</option>
+                            <option value="magen">magenta</option>
+                            <option value="white">white</option>
+                            <option value="Lred">Lred</option>
+                            <option value="Lblue">Lblue</option>
+                            <option value="Lyellow">Lyellow</option>
+                            <option value="Lgreen">Lgreen</option>
+                            <option value="Lmagen">Lmagenta</option>
+                            <option value="Dred">Dred</option>
+                            <option value="Dblue">Dblue</option>
+                            <option value="Dyellow">Dyellow</option>
+                            <option value="Dgreen">Dgreen</option>
+                            <option value="Dmagen">Dmagenta</option>
+                            <option value="none">none</option>
+                        </param>
+                        <param name="colorPickerMark" type="color" appearance="colorbutton" gui-text=""/>
+                    </hbox>
+                    <hbox>
+                        <label>Stroke color</label>
+                        <spacer size="expand"/>
+                        <param name="lineColor" type="optiongroup" appearance="combo" gui-text="" gui-description="Let you choose stroke color. If you choose 'use color picker', you can select the color from the color picker widget on the right">
+                            <option value="picker">use color picker --></option>
+                            <option value="black">black</option>
+                            <option value="red">red</option>
+                            <option value="blue">blue</option>
+                            <option value="yellow">yellow</option>
+                            <option value="green">green</option>
+                            <option value="magen">magenta</option>
+                            <option value="white">white</option>
+                            <option value="Lred">Lred</option>
+                            <option value="Lblue">Lblue</option>
+                            <option value="Lyellow">Lyellow</option>
+                            <option value="Lgreen">Lgreen</option>
+                            <option value="Lmagen">Lmagenta</option>
+                            <option value="Dred">Dred</option>
+                            <option value="Dblue">Dblue</option>
+                            <option value="Dyellow">Dyellow</option>
+                            <option value="Dgreen">Dgreen</option>
+                            <option value="Dmagen">Dmagenta</option>
+                            <option value="none">none</option>
+                        </param>
+                        <param name="colorPickerLine" type="color" appearance="colorbutton" gui-text=""/>
+                    </hbox>
+                </vbox>
+            </hbox>
+            <label appearance="header">Custom type</label>
+            <param name="makeCustomPathDef" type="string" appearance="multiline" gui-description="Path definition of the custom marker. Please see any svg reference on the sintax, e.g., https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths.
+Example: M -5,5 L 5,-5 M 5,5 L -5,-5  (produces a cross)" gui-text="Path definition">M -5,5 L 5,-5 M 5,5 L -5,-5
+            </param>
+            <param name="makeCustomLineWidth" type="float" min="0.1" max="10" precision="1" gui-text="Marker stroke line width">1.0</param>
+
+
+        </page>
+        <page name="Help" gui-text="About">
+            <param name="name" type="description" xml:space="preserve">
+This extension allows you to create new markers with custom colors.
+The extension will add one line in your document to show the newly created marker.
+            </param>
+            <label>For details please refer to</label>
+            <label appearance="url">https://github.com/fsmMLK/inkscapeCreateMarkers</label>
+        </page>
+    </param>
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="fsmMLK"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">createMarkers.py</command>
+    </script>
+</inkscape-extension>
