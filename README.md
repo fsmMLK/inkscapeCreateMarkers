@@ -19,10 +19,10 @@ The main features/advantages are
 
 Compatibility table
 
-  Inkscape        |  createMarkers  | inkscapeMadeEasy | Receive updates?|
-------------------|-----------------|------------------|-----------------|
-       1.0        | 1.0 (latest)    |    1.0 (latest)  | YES             |
- 0.48, 0.91, 0.92 | 0.9x (obsolete) |  0.9x (obsolete) | NO              |
+|  Inkscape        |  createMarkers  | inkscapeMadeEasy | Receive updates?|
+|------------------|-----------------|------------------|-----------------|
+|       1.0        | 1.0 (latest)    |    1.0 (latest)  | YES             |
+| 0.48, 0.91, 0.92 | 0.9x (obsolete) |  0.9x (obsolete) | NO              |
 
 
 **Latest version:** The latest version of **createMarkers** is **1.0**. This version is compatible with Inkscape 1.0 and up only. It is **incompatible** with older Inkscape versions!
