@@ -20,7 +20,7 @@ The main features/advantages are
 Compatibility table
 
   Inkscape        |  createMarkers  | inkscapeMadeEasy | Receive updates?
-------------------|-----------------|------------------|------------
+------------------|-----------------|------------------|-----------------
        1.0        | 1.0 (latest)    |    1.0 (latest)  | YES
  0.48, 0.91, 0.92 | 0.9x (obsolete) |  0.9x (obsolete) | NO
 
