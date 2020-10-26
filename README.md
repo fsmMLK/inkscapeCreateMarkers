@@ -1,5 +1,5 @@
 # createMarkers
-This extensil will assist you creating new markers with custom shapes and colors for [Inkscape](https://inkscape.org/).
+This extension will assist you creating new markers with custom shapes and colors for [Inkscape](https://inkscape.org/).
 
 <img src="docs/images/Examples.png" width="900px"/>
 
@@ -37,7 +37,7 @@ Installation procedures for latest and older versions are described below.
 
 ## Requirements (all versions)
 
-- You will need [inkscapeMadeEasy](https://github.com/fsmMLK/inkscapeMadeEasy) plugin installed. Check the compatibility table above to know the correct version you need.
+- You will need [inkscapeMadeEasy](https://github.com/fsmMLK/inkscapeMadeEasy) plugin installed. Check the compatibility table above to know the version you need.
 
 ## Installation procedure (v1.0 only)
 

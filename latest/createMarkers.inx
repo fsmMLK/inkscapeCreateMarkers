@@ -10,7 +10,7 @@
             <hbox>
                 <vbox>
                     <label appearance="header">Marker type</label>
-                    <param name="markerType" type="optiongroup" gui-text="" gui-description="Choose the type of marker">
+                    <param name="markerType" type="optiongroup" gui-text=" " gui-description="Choose the type of marker">
                         <option value="arrow1">Arrow1</option>
                         <option value="cross">Cross</option>
                         <option value="dot">Dot</option>
@@ -35,7 +35,7 @@
                     <hbox>
                         <label>Filling color</label>
                         <spacer size="expand"/>
-                        <param name="markColor" type="optiongroup" appearance="combo" gui-text="" gui-description="Let you choose filling color. If you choose 'use color picker', you can select the color from the color picker widget on the right.">
+                        <param name="markColor" type="optiongroup" appearance="combo" gui-text=" " gui-description="Let you choose filling color. If you choose 'use color picker', you can select the color from the color picker widget on the right.">
                             <option value="picker">use color picker --></option>
                             <option value="black">black</option>
                             <option value="red">red</option>
@@ -56,12 +56,12 @@
                             <option value="Dmagen">Dmagenta</option>
                             <option value="none">none</option>
                         </param>
-                        <param name="colorPickerMark" type="color" appearance="colorbutton" gui-text=""/>
+                        <param name="colorPickerMark" type="color" appearance="colorbutton" gui-text=" "/>
                     </hbox>
                     <hbox>
                         <label>Stroke color</label>
                         <spacer size="expand"/>
-                        <param name="lineColor" type="optiongroup" appearance="combo" gui-text="" gui-description="Let you choose stroke color. If you choose 'use color picker', you can select the color from the color picker widget on the right">
+                        <param name="lineColor" type="optiongroup" appearance="combo" gui-text=" " gui-description="Let you choose stroke color. If you choose 'use color picker', you can select the color from the color picker widget on the right">
                             <option value="picker">use color picker --></option>
                             <option value="black">black</option>
                             <option value="red">red</option>
@@ -82,7 +82,7 @@
                             <option value="Dmagen">Dmagenta</option>
                             <option value="none">none</option>
                         </param>
-                        <param name="colorPickerLine" type="color" appearance="colorbutton" gui-text=""/>
+                        <param name="colorPickerLine" type="color" appearance="colorbutton" gui-text=" "/>
                     </hbox>
                 </vbox>
             </hbox>
