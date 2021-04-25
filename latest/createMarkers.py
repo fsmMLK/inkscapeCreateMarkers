@@ -63,8 +63,8 @@ class CreateMarkers(inkBase.inkscapeMadeEasy):
         # root_layer = self.getcurrentLayer()
 
         # sets colors. See inkDraw.color class for instructions.
-        [markerColor, alpha] = inkDraw.color.parseColorPicker(so.markColorOption, so.colorPickerMark)
-        [lineColor, alpha] = inkDraw.color.parseColorPicker(so.lineColorOption, so.colorPickerLine)
+        markerColor = inkDraw.color.parseColorPicker(so.markColorOption, so.colorPickerMark)
+        lineColor = inkDraw.color.parseColorPicker(so.lineColorOption, so.colorPickerLine)
 
         if so.markerType == 'dot':
             nameMarkerDot = inkDraw.marker.createDotMarker(self, so.markerName + '_' + str(so.scale), RenameMode=int(so.renameMode),
